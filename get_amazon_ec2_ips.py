@@ -1,6 +1,10 @@
 #!/usr/bin/env python
 
-#
+# Prints route commands for current Amazon EC2 US networks.
+# Squished into /11 space, so you don't need a bazillion routes. This picks up
+# non-EC2 address as a result. Specifically, 54/2048=2.6% of IPv4 address range.
+
+# See: https://docs.aws.amazon.com/general/latest/gr/aws-ip-ranges.html
 
 import requests
 import ipaddress
